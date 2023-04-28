@@ -1,0 +1,70 @@
+body {
+  background-color: #9ebdbf;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+h2 {
+  margin: 0 0 5px;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+select {
+  display: block;
+  border-radius: 8px;
+  font-size: 20px;
+  padding: 5px;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 10px 20px;
+  background-image: url("../background/clock1.jpg");
+  background-size: cover;
+  background-position: 47%;
+  border-radius: 15px;
+  box-shadow: rgba(100, 100, 111, 0.8) 0px 7px 29px 0px;
+}
+
+.city {
+  display: flex;
+  margin: 5px 0;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+
+.city:last-child {
+  border: none;
+}
+
+.date {
+  opacity: 0.6;
+}
+
+.time {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.time small {
+  vertical-align: middle;
+  font-size: 12px;
+}
