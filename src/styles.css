@@ -36,7 +36,7 @@ a {
   max-width: 600px;
   margin: 40px auto;
   padding: 10px 20px;
-  background-image: url("../background/clock1.jpg");
+  background-image: url("../background/clock4.jpg");
   background-size: cover;
   background-position: 47%;
   border-radius: 15px;
@@ -60,6 +60,8 @@ a {
 }
 
 .time {
+  color: #5a4026;
+  text-decoration: solid;
   font-size: 40px;
   font-weight: bold;
 }
