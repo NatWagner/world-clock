@@ -1,17 +1,4 @@
 function updateTime() {
-  //zurich
-  let zurichElement = document.querySelector("#zurich");
-  if (zurichElement) {
-    let zurichDateElement = zurichElement.querySelector(".date");
-    let zurichTimeElement = zurichElement.querySelector(".time");
-    let zurichTime = moment().tz("Europe/Zurich");
-
-    zurichDateElement.innerHTML = zurichTime.format("MMMM Do YYYY");
-    zurichTimeElement.innerHTML = zurichTime.format(
-      "h:mm:ss [<small>]A[</small>]"
-    );
-  }
-
   //dublin
   let dublinElement = document.querySelector("#dublin");
   if (dublinElement) {
@@ -54,6 +41,9 @@ function updateTime() {
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
