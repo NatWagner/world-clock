@@ -1,54 +1,59 @@
 body {
-  background-color: #9ebdbf;
+  background-image: url("../background/sandglass.jpg");
+  background-size: cover;
+  background-position: 80%;
   font-family: "Josefin Sans", sans-serif;
 }
 
 h1 {
-  text-align: center;
   font-size: 45px;
   font-weight: 600;
+  text-align: center;
 }
 
 h2 {
-  margin: 0 0 5px;
   font-size: 28px;
-  font-weight: 400;
+  font-weight: 600;
+  margin: 0 0 5px;
 }
 
 select {
-  display: block;
+  background-color: rgb(234, 225, 211, 0.8);
   border-radius: 8px;
+  display: block;
   font-size: 20px;
   padding: 5px;
+  margin-bottom: 30px;
   width: 100%;
 }
 
 footer {
-  text-align: center;
+  color: black;
   font-size: 12px;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
+  color: black;
+  font-size: 15px;
 }
 
 .container {
+  background-color: rgb(234, 225, 211, 0.7);
+  border-radius: 15px;
+  box-shadow: rgba(100, 100, 111, 0.8) 0px 7px 29px 0px;
   max-width: 600px;
   margin: 40px auto;
   padding: 10px 20px;
-  background-image: url("../background/clock4.jpg");
-  background-size: cover;
-  background-position: 47%;
-  border-radius: 15px;
-  box-shadow: rgba(100, 100, 111, 0.8) 0px 7px 29px 0px;
 }
 
 .city {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
   display: flex;
   margin: 5px 0;
-  justify-content: space-between;
   padding: 20px 0;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
 }
 
 .city:last-child {
@@ -60,13 +65,15 @@ a {
 }
 
 .time {
-  color: #5a4026;
-  text-decoration: solid;
   font-size: 40px;
   font-weight: bold;
 }
 
 .time small {
+  font-size: 18px;
   vertical-align: middle;
-  font-size: 12px;
+}
+
+.backLink {
+  color: black;
 }

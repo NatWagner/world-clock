@@ -54,10 +54,10 @@ function updateCity(event) {
               <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
             </div>
             <div class="time">${cityTime.format(
-              "h:mm:ss"
+              "h:mm"
             )} <small>${cityTime.format("A")}</small></div>
           </div>
-          <a href="index.html">⬅️back</a>
+          <a class= backLink href="index.html"><i class="fa-solid fa-clock-rotate-left"></i></i> back</a>
          `;
 }
 
