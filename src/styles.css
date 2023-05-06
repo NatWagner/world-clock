@@ -1,6 +1,7 @@
 body {
   background-image: url("../background/sandglass.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: 80%;
   font-family: "Josefin Sans", sans-serif;
 }
